@@ -58,6 +58,11 @@ create table note (
 
 # Iniciar servidor de desarrollo
 
+Instalar dependencias con `composer`.
+```bash
+composer install
+```
+
 Puedes utilizar el comando de `php`, indicándole `IP:PUERTO`.
 
 ```bash
