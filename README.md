@@ -74,41 +74,41 @@ composer run dev
 
 ### Autenticación
 
-- **POST /login**
+- **POST /api/auth/login**
 
   - Descripción: Inicia sesión y obtiene un token.
   - Códigos de estado: 200 (OK), 401 (Unauthorized)
   - Request Body: `username, password`
 
-- **POST /register**
+- **POST /api/auth/register**
   - Descripción: Crea un usuario en el sistema.
   - Códigos de estado: 201 (Created), 400 (Bad Request)
   - Request Body: `username, password`
 
 ### Notas
 
-- **GET /notes**
+- **GET /api/notes**
 
   - Descripción: Obtiene todas las notas del usuario autenticado.
   - Códigos de estado: 200 (OK), 401 (Unauthorized)
 
-- **POST /notes**
+- **POST /api/notes**
 
   - Descripción: Crea una nueva nota.
   - Códigos de estado: 201 (Created), 400 (Bad Request), 401 (Unauthorized)
   - Request Body: `text`
 
-- **GET /notes/{id}**
+- **GET /api/notes/{id}**
 
   - Descripción: Obtiene una nota específica del usuario autenticado.
   - Códigos de estado: 200 (OK), 404 (Not Found), 401 (Unauthorized)
 
-- **PUT /notes/{id}**
+- **PUT /api/notes/{id}**
 
   - Descripción: Actualiza una nota específica del usuario autenticado.
   - Códigos de estado: 200 (OK), 400 (Bad Request), 304 (Not Modified), 401 (Unauthorized)
   - Request Body: `text`
 
-- **DELETE /notes/{id}**
+- **DELETE /api/notes/{id}**
   - Descripción: Elimina una nota específica del usuario autenticado.
   - Códigos de estado: 200 (OK), 304 (Not Modified), 401 (Unauthorized)
