@@ -2,6 +2,10 @@
 
 Proyecto con la finalidad de aprender y practicar PHP, en el cual se crea una API de notas sencilla con el framework Flight, en el cual se incluye autenticación, rutas protegidas y CRUD para las notas, este se encuentra disponible para conectar con una base de datos MySQL.
 
+# preview
+
+![api-php-preview](./preview/api-php.webp)
+
 # Como instalar y probar
 
 ## requisitos:
